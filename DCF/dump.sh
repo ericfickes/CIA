@@ -4,14 +4,15 @@
 #	./dump.sh 
 #	
 #	MAKE OUT FILE NAMEs
+SRC_FLDR="/Volumes/Untitled/DCIM/100GOPRO/";
+OUT_FLDR="/Users/fickes/Desktop/_GOPRO7_"$(date +%s);
 OUT_FILE="MasterOut_"$(date +%s)".MP4";
-OUT_FLDR="/Users/fickes/Desktop/FIX_GOPRO_OUT_"$(date +%s);
-echo $OUT_FILE;
+# echo $OUT_FILE;
 
 echo "[DUMP]";
 	#	default untitled mini SD card w/GoPro content
 	#	rsync -av /Volumes/Untitled/DCIM/100GOPRO/*.*4 /Users/fickes/Desktop/FIX_GOPRO_OUT/
-	rsync -av /Volumes/Untitled/DCIM/100GOPRO/*.MP4 $OUT_FLDR;
+	rsync -av $SRC_FLDR*.MP4 $OUT_FLDR;
 
 #	TODO >> .WAV support
 
