@@ -50,8 +50,8 @@ OUT_FILE="MaxBlaster_"$(date +%s)".MP4";
 # #	for f in `ls -1`; do ffmpeg -i $f -vcodec h264 -acodec mp3 _$f; done
 # <(for f in `ls -1tr $SRC_FLDR/*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
 # for f in `ls -1t $SRC_FLDR*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
-echo "shrink $OUT_FILE down"
-	ffmpeg -i $SRC_FLDR$OUT_FILE -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
+echo "shrink $SRC_FLDRMasterBlaster.MP4 down to $OUT_FILE down"
+	ffmpeg -i $SRC_FLDR"MasterBlaster.MP4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
 
 # # 5.	Inject metadata ( GUI tool )
 echo "Remember to use Spatial Media Metadata Injector open $OUT_FILE, check the box 'My video is spherical (3D)', and press 'Inject metadata'. You can now save the metadata-injected file, by the default name result_injected.mp4 . Congratulations, you have successfully reoriented the default viewing angle of your 360 spherical video file.";
