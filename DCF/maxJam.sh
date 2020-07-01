@@ -32,16 +32,18 @@ echo "Make input.txt in $SRC_FLDR. ( remember SORT impacts assemblage )";
 echo "Do the mashed potato in $SRC_FLDR";
 	ffmpeg -f concat -safe 0 -i $SRC_FLDR"input.txt" -c copy $SRC_FLDR"MaxHeadroom.mp4";
 
+
+# I DON'T KNOW IF THIS STEP IS REALLY NECCESARY
 # # 3.	re-orient 360
 # # TODO: find the sweet yaw|pitch|roll settings for that 360 bubble look
-echo "Do the 360 RE-Orient dance in $SRC_FLDR"
-echo "<<< NOTE : 180 MODE CURRENTLY ACTIVE -- seeking that Thrust space bubble YAW|PITCH|ROLLs >>>";
-	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR"MasterBlaster.MP4"
-	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vf v360=e:e:yaw=180:pitch=180:roll=180 $SRC_FLDR"MasterBlaster.MP4"
+# echo "Do the 360 RE-Orient dance in $SRC_FLDR"
+# echo "<<< NOTE : 180 MODE CURRENTLY ACTIVE -- seeking that Thrust space bubble YAW|PITCH|ROLLs >>>";
+# 	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR"MasterBlaster.MP4"
+# 	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=180:pitch=180:roll=180 $SRC_FLDR"MasterBlaster.MP4"
 
-	# DELETE-SKI
-echo "DELETE $SRC_FLDRMaxHeadroom.mp4";
-	rm $SRC_FLDR"MaxHeadroom.mp4";
+# 	# DELETE-SKI
+# echo "DELETE $SRC_FLDRMaxHeadroom.mp4";
+# 	rm $SRC_FLDR"MaxHeadroom.mp4";
 
 
 
@@ -51,11 +53,11 @@ OUT_FILE="MaxBlaster_"$(date +%s)".MP4";
 # #	for f in `ls -1`; do ffmpeg -i $f -vcodec h264 -acodec mp3 _$f; done
 # <(for f in `ls -1tr $SRC_FLDR/*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
 # for f in `ls -1t $SRC_FLDR*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
-echo "shrink $SRC_FLDRMasterBlaster.MP4 down to $OUT_FILE down"
-	ffmpeg -i $SRC_FLDR"MasterBlaster.MP4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
+echo "shrink $SRC_FLDRMaxHeadroom.mp4 down to $OUT_FILE down"
+	ffmpeg -i "$SRC_FLDRMaxHeadroom.mp4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
 	
 	# CLEANUP
-	rm $SRC_FLDR"MasterBlaster.MP4";
+	rm $SRC_FLDR"$SRC_FLDRMaxHeadroom.mp4";
 	rm $SRC_FLDR"input.txt"
 
 # # 5.	Inject metadata ( GUI tool )
