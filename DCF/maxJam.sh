@@ -53,11 +53,11 @@ OUT_FILE="MaxBlaster_"$(date +%s)".MP4";
 # #	for f in `ls -1`; do ffmpeg -i $f -vcodec h264 -acodec mp3 _$f; done
 # <(for f in `ls -1tr $SRC_FLDR/*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
 # for f in `ls -1t $SRC_FLDR*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
-echo "shrink $SRC_FLDRMaxHeadroom.mp4 down to $OUT_FILE down"
-	ffmpeg -i "$SRC_FLDRMaxHeadroom.mp4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
+echo $SRC_FLDR+"MaxHeadroom.mp4 down to $OUT_FILE down"
+	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
 	
 	# CLEANUP
-	rm $SRC_FLDR"$SRC_FLDRMaxHeadroom.mp4";
+	rm $SRC_FLDR"MaxHeadroom.mp4";
 	rm $SRC_FLDR"input.txt"
 
 # # 5.	Inject metadata ( GUI tool )
