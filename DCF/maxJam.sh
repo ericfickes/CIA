@@ -73,6 +73,12 @@ echo "Remember to use Spatial Media Metadata Injector open $OUT_FILE, check the 
 
 
 # #	LEGACY STUFFS
+
+
+
+# Launch GoPro Player from Terminal
+# /Applications/GoPro\ Player.app/Contents/MacOS/GoPro\ Player
+
 # # #	MAKE OUT FILE NAMEs
 # # OUT_FILE="MasterOut_"$(date +%s)".MP4";
 # # SRC_FLDR="/Users/fickes/Desktop/_MAXOUT/";
