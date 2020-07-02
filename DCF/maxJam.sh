@@ -49,13 +49,19 @@ echo "Do the mashed potato in $SRC_FLDR";
 
 OUT_FILE="MaxBlaster_"$(date +%s)".MP4";
 
+# OUT_FILE IS LOSING AUDIO!!!
+
 # # 4. FFMPEG COPY ( TO SHRINK ) FINAL MP4
 # #	for f in `ls -1`; do ffmpeg -i $f -vcodec h264 -acodec mp3 _$f; done
 # <(for f in `ls -1tr $SRC_FLDR/*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
 # for f in `ls -1t $SRC_FLDR*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
 echo $SRC_FLDR+"MaxHeadroom.mp4 down to $OUT_FILE down"
-	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
-	
+
+# SHRINK IS STRIPPING AUDIO OUT?!?!?
+	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
+	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
+	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec hevc -acodec aac -vf v360=e:e:yaw=180:pitch=180:roll=180 $SRC_FLDR$OUT_FILE
+
 	# CLEANUP
 	rm $SRC_FLDR"MaxHeadroom.mp4";
 	rm $SRC_FLDR"input.txt"
