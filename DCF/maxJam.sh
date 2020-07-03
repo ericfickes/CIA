@@ -49,7 +49,6 @@ echo $SRC_FLDR+"MaxHeadroom.mp4 down to $OUT_FILE down"
 echo "\n -------------------------------------------------------------------------------";
 
 	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 45 -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
-	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 24  -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
 	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 24  -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
 
 
