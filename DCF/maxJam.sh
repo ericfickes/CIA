@@ -12,8 +12,9 @@ SRC_FLDR=$1;
 
 
 # UPPERCASIFY mp4s just in case
+echo "-------------------------------------------------------------------------------";
 echo "UPPERCASIFY mp4s in $SRC_FLDR";
-
+echo "-------------------------------------------------------------------------------";
 	for f in $SRC_FLDR*.*4; 
 		do mv "$f" "${f%.*}.MP4"; 
 	done
@@ -21,17 +22,19 @@ echo "UPPERCASIFY mp4s in $SRC_FLDR";
 
 
 # # 1.	Make input.txt
+echo "-------------------------------------------------------------------------------";
 echo "Make input.txt in $SRC_FLDR. ( remember SORT impacts assemblage )";
+echo "-------------------------------------------------------------------------------";
 	#	DON'T FORGET TO CONFIRM FILE SORT IN input.txt
 	for f in `ls -1t $SRC_FLDR*.MP4`; do echo "file '$f'" >> $SRC_FLDR"input.txt"	; done
 	#echo "Check for input.txt in $SRC_FLDR";
 
 
-
+echo "-------------------------------------------------------------------------------";
 # # 2.	Concat MP4s
 echo "Do the mashed potato in $SRC_FLDR";
 	ffmpeg -f concat -safe 0 -i $SRC_FLDR"input.txt" -c copy $SRC_FLDR"MaxHeadroom.mp4";
-
+echo "-------------------------------------------------------------------------------";
 
 # I DON'T KNOW IF THIS STEP IS REALLY NECCESARY
 # # 3.	re-orient 360
@@ -55,12 +58,21 @@ OUT_FILE="MaxBlaster_"$(date +%s)".MP4";
 # #	for f in `ls -1`; do ffmpeg -i $f -vcodec h264 -acodec mp3 _$f; done
 # <(for f in `ls -1tr $SRC_FLDR/*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
 # for f in `ls -1t $SRC_FLDR*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
+echo "-------------------------------------------------------------------------------";
 echo $SRC_FLDR+"MaxHeadroom.mp4 down to $OUT_FILE down"
+echo "-------------------------------------------------------------------------------";
 
 # SHRINK IS STRIPPING AUDIO OUT?!?!?
 	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
-	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
-	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec hevc -acodec aac -vf v360=e:e:yaw=180:pitch=180:roll=180 $SRC_FLDR$OUT_FILE
+	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 45 -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
+	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 24  -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
+
+
+# echo "-------------------------------------------------------------------------------";
+# echo "SHRINK IT DOWN???"
+# echo "-------------------------------------------------------------------------------";
+
+# 	ffmpeg -i $SRC_FLDR$OUT_FILE -c copy $SRC_FLDR"did_it_shrink.mp4"
 
 	# CLEANUP
 	rm $SRC_FLDR"MaxHeadroom.mp4";

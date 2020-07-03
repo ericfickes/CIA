@@ -43,7 +43,7 @@ echo "[CONCAT]";
 
 #	IPSO FACTO -> BASH PITFALL 1 -- http://mywiki.wooledge.org/BashPitfalls#for_f_in_.24.28ls_.2A.mp3.29
 #	It freaking works
-	ffmpeg -f concat -safe 0 -i <(for f in `ls -1tr $OUT_FLDR/*.MP4`; do echo "file '$f'"; done) -c copy $OUT_FLDR/$OUT_FILE;
+	ffmpeg -f concat -safe 0 -i <(for f in `ls -1tr $OUT_FLDR/*.MP4`; do echo "file '$f'"; done)-crf 45 -c copy $OUT_FLDR/$OUT_FILE;
 #	$PWD/
 
 #	STEP2
