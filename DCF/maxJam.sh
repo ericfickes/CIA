@@ -12,9 +12,9 @@ SRC_FLDR=$1;
 
 
 # UPPERCASIFY mp4s just in case
-echo "-------------------------------------------------------------------------------";
+echo "\n -------------------------------------------------------------------------------";
 echo "UPPERCASIFY mp4s in $SRC_FLDR";
-echo "-------------------------------------------------------------------------------";
+echo "\n -------------------------------------------------------------------------------";
 	for f in $SRC_FLDR*.*4; 
 		do mv "$f" "${f%.*}.MP4"; 
 	done
@@ -22,65 +22,49 @@ echo "--------------------------------------------------------------------------
 
 
 # # 1.	Make input.txt
-echo "-------------------------------------------------------------------------------";
+echo "\n -------------------------------------------------------------------------------";
 echo "Make input.txt in $SRC_FLDR. ( remember SORT impacts assemblage )";
-echo "-------------------------------------------------------------------------------";
+echo "\n -------------------------------------------------------------------------------";
 	#	DON'T FORGET TO CONFIRM FILE SORT IN input.txt
-	for f in `ls -1t $SRC_FLDR*.MP4`; do echo "file '$f'" >> $SRC_FLDR"input.txt"	; done
+	for f in `ls -1tr $SRC_FLDR*.MP4`; do echo "file '$f'" >> $SRC_FLDR"input.txt"	; done
 	#echo "Check for input.txt in $SRC_FLDR";
 
 
-echo "-------------------------------------------------------------------------------";
+echo "\n -------------------------------------------------------------------------------";
 # # 2.	Concat MP4s
 echo "Do the mashed potato in $SRC_FLDR";
 	ffmpeg -f concat -safe 0 -i $SRC_FLDR"input.txt" -c copy $SRC_FLDR"MaxHeadroom.mp4";
-echo "-------------------------------------------------------------------------------";
-
-# I DON'T KNOW IF THIS STEP IS REALLY NECCESARY
-# # 3.	re-orient 360
-# # TODO: find the sweet yaw|pitch|roll settings for that 360 bubble look
-# echo "Do the 360 RE-Orient dance in $SRC_FLDR"
-# echo "<<< NOTE : 180 MODE CURRENTLY ACTIVE -- seeking that Thrust space bubble YAW|PITCH|ROLLs >>>";
-# 	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR"MasterBlaster.MP4"
-# 	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=180:pitch=180:roll=180 $SRC_FLDR"MasterBlaster.MP4"
-
-# 	# DELETE-SKI
-# echo "DELETE $SRC_FLDRMaxHeadroom.mp4";
-# 	rm $SRC_FLDR"MaxHeadroom.mp4";
-
+echo "\n -------------------------------------------------------------------------------";
 
 
 OUT_FILE="MaxBlaster_"$(date +%s)".MP4";
 
-# OUT_FILE IS LOSING AUDIO!!!
 
-# # 4. FFMPEG COPY ( TO SHRINK ) FINAL MP4
+# SHRINK & 360
 # #	for f in `ls -1`; do ffmpeg -i $f -vcodec h264 -acodec mp3 _$f; done
 # <(for f in `ls -1tr $SRC_FLDR/*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
 # for f in `ls -1t $SRC_FLDR*.MP4`; do ffmpeg -i $f -vcodec h264 -acodec mp3 $SML_FLDR$f; done);
-echo "-------------------------------------------------------------------------------";
+echo "\n -------------------------------------------------------------------------------";
 echo $SRC_FLDR+"MaxHeadroom.mp4 down to $OUT_FILE down"
-echo "-------------------------------------------------------------------------------";
+echo "\n -------------------------------------------------------------------------------";
 
-# SHRINK IS STRIPPING AUDIO OUT?!?!?
-	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -vcodec h264 -acodec mp3 $SRC_FLDR$OUT_FILE
 	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 45 -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
-	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 24  -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
+	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 24  -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
+	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 0  -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
 
 
-# echo "-------------------------------------------------------------------------------";
-# echo "SHRINK IT DOWN???"
-# echo "-------------------------------------------------------------------------------";
-
-# 	ffmpeg -i $SRC_FLDR$OUT_FILE -c copy $SRC_FLDR"did_it_shrink.mp4"
+echo "\n -------------------------------------------------------------------------------";
+echo " CLEANUP ";
+echo "\n -------------------------------------------------------------------------------";
 
 	# CLEANUP
 	rm $SRC_FLDR"MaxHeadroom.mp4";
-	rm $SRC_FLDR"input.txt"
+ 	rm $SRC_FLDR"input.txt"
 
 # # 5.	Inject metadata ( GUI tool )
+echo "\n -------------------------------------------------------------------------------";
 echo "Remember to use Spatial Media Metadata Injector open $OUT_FILE, check the box 'My video is spherical (3D)', and press 'Inject metadata'. You can now save the metadata-injected file, by the default name result_injected.mp4 . Congratulations, you have successfully reoriented the default viewing angle of your 360 spherical video file.";
-
+echo "\n -------------------------------------------------------------------------------";
 
 
 
