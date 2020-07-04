@@ -1,0 +1,121 @@
+/*
+#	say Hello, World
+#	say -v Alex -o hi -f hello_world.txt
+#	say --interactive=/green spending each day the color of the leaves
+#	say -o hi.aac 'Hello, [[slnc 200]] World'
+#	say -o hi.m4a --data-format=alac Hello, World.
+#	say -o hi.caf --data-format=LEF32@8000 Hello, World
+
+#	say -v '?'
+#	say --file-format=?
+#	say --file-format=caff --data-format=?
+#	say -o hi.m4a --bit-rate=?
+*/
+
+
+say -v Agnes "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AgnesTest.aiff 	
+say -v Albert "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AlbertTest.aiff 
+say -v Alex "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AlexTest.aiff 
+say -v Alice "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AliceTest.aiff 
+say -v Allison "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AllisonTest.aiff 
+say -v Alva "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AlvaTest.aiff 
+say -v Amelie "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AmelieTest.aiff 
+say -v Angelica "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AngelicaTest.aiff 
+say -v Anna "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AnnaTest.aiff 
+say -v Ava "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AvaTest.aiff 
+
+
+
+
+say -v Bad News  "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BadNewsTest.aiff 
+say -v Bahh "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BahhTest.aiff 
+say -v Bells  "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BellsTest.aiff 
+say -v Boing "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BoingTest.aiff 
+say -v Bruce "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BruceTest.aiff 
+say -v Bubbles "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BubblesTest.aiff 
+say -v Carmit "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o CarmitTest.aiff 
+say -v Catarina "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o CatarinaTest.aiff 
+say -v Cellos "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o CellosTest.aiff 
+say -v Cem "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o CemTest.aiff
+say -v Damayanti "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o DamayantiTest.aiff 
+
+
+say -v Daniel "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o DanielTest.aiff 
+say -v Deranged "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o DerangedTest.aiff 
+say -v Diego "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o DiegoTest.aiff 
+say -v Ellen "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o EllenTest.aiff 
+say -v Ewa "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o EwaTest.aiff 
+say -v Felipe "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o FelipeTest.aiff 
+say -v Fiona "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o FionaTest.aiff 
+say -v Fred "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o FredTest.aiff 
+say -v Good News "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o GoodNewsTest.aiff 
+say -v Henrik "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o HenrikTest.aiff 
+say -v Hysterical "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o HytsericalTest.aiff 
+
+
+
+
+say -v Ioana "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o IoanaTest.aiff 
+say -v Joana "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o JoanaTest.aiff 
+say -v Jorge "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o JorgeTest.aiff 
+say -v Juan "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o JuanTest.aiff 
+say -v Junior "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o JuniorTest.aiff 
+say -v Kanya "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KanyaTest.aiff 
+say -v Karen "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KarenTest.aiff 
+say -v Kathy "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KathyTest.aiff 
+say -v Klara "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KlaraTest.aiff 
+say -v Kyoko "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KyokoTest.aiff 
+say -v Laila "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LailaTest.aiff 
+
+
+
+say -v Laura "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LauraTest.aiff 
+say -v Lekha "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LekhaTest.aiff 
+say -v Luca "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LucaTest.aiff 
+say -v Luciana "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LucianaTest.aiff 
+say -v Maged "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MagedTest.aiff 
+say -v Mariska "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MariskaTest.aiff 
+say -v 'Mei-Jia' "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MeiJiaTest.aiff 
+say -v Melina "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MelinaTest.aiff 
+say -v Milena "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MilenaTest.aiff 
+say -v Moira "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MoiraTest.aiff 
+say -v Monica "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MonicaTest.aiff 
+
+
+
+say -v Nora "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o NoraTest.aiff 
+say -v Oskar "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o OskarTest.aiff 
+say -v Paulina "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o PaulinaTest.aiff 
+say -v 'Pipe Organ' "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o PipeOrganTest.aiff 
+say -v Princess "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o PrincessTest.aiff 
+say -v Ralph "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o RalphTest.aiff
+say -v Rishi "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o RishiTest.aiff 
+say -v Samantha "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SamanthaTest.aiff 
+say -v Sara "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SaraTest.aiff 
+say -v Satu "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SatuTest.aiff 
+say -v 'Sin-ji' "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SinjiTest.aiff 
+
+
+
+
+say -v Susan "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SusanTest.aiff 
+say -v Tarik "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TarikTest.aiff 
+say -v Tessa "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TessaTest.aiff 
+say -v Thomas "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o ThomasTest.aiff 
+say -v 'Ting-Ting' "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TingTingTest.aiff 
+say -v Tom "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TomTest.aiff 
+say -v Trinoids "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TrinoidsTest.aiff 
+say -v Veena "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o VeenaTest.aiff 
+say -v Vicki "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o VickiTest.aiff 
+say -v Victoria "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o VictoriaTest.aiff 
+
+
+say -v Whisper "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o WhisperTest.aiff 
+say -v Xander "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o XanderTest.aiff 
+say -v Yelda "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o YeldaTest.aiff 
+say -v Yuna "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o YunaTest.aiff 
+say -v Yuri "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o YuriTest.aiff 
+say -v Zarvox "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o ZarvoxTest.aiff 
+say -v Zosia "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o ZosiaTest.aiff 
+say -v Zuzana "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o ZuzanaTest.aiff 
+
