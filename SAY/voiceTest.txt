@@ -10,112 +10,125 @@
 #	say --file-format=?
 #	say --file-format=caff --data-format=?
 #	say -o hi.m4a --bit-rate=?
+
+
+#	CONCAT .AIFFs into master.aiffs
+#	say -v Daniel "LETS GET FUNKY" -o DanielLETSGETFUNKY.aiff
+#	say -v Maged "FUNKY FUNKY" -o MagedFUNKYFUNKY.aiff
+#	ffmpeg -f concat -safe 0 -i <(for f in `ls -1tr ~/Desktop/INFORMATION/fftest/*.aiff`; do echo "file '$f'"; done) -crf 24 -c copy ~/Desktop/INFORMATION/fftest/master.aiff;
+
+#	TODO: Write .sh that is the "phpinfo()" of your local say
+#	run script to kick out all of the appropriate SAY information for the local system
+#	- voice list
+#	- format list
+#	- ??
 */
 
 
-say -v Agnes "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AgnesTest.aiff 	
-say -v Albert "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AlbertTest.aiff 
-say -v Alex "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AlexTest.aiff 
-say -v Alice "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AliceTest.aiff 
-say -v Allison "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AllisonTest.aiff 
-say -v Alva "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AlvaTest.aiff 
-say -v Amelie "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AmelieTest.aiff 
-say -v Angelica "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AngelicaTest.aiff 
-say -v Anna "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AnnaTest.aiff 
-say -v Ava "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o AvaTest.aiff 
+say -v Agnes "what we need right now is MORE FUNKY JAMS" -o AgnesTest.aiff 	
+say -v Albert "what we need right now is MORE FUNKY JAMS" -o AlbertTest.aiff 
+say -v Alex "what we need right now is MORE FUNKY JAMS" -o AlexTest.aiff 
+say -v Alice "what we need right now is MORE FUNKY JAMS" -o AliceTest.aiff 
+say -v Allison "what we need right now is MORE FUNKY JAMS" -o AllisonTest.aiff 
+say -v Alva "what we need right now is MORE FUNKY JAMS" -o AlvaTest.aiff 
+say -v Amelie "what we need right now is MORE FUNKY JAMS" -o AmelieTest.aiff 
+say -v Angelica "what we need right now is MORE FUNKY JAMS" -o AngelicaTest.aiff 
+say -v Anna "what we need right now is MORE FUNKY JAMS" -o AnnaTest.aiff 
+say -v Ava "what we need right now is MORE FUNKY JAMS" -o AvaTest.aiff 
 
 
 
 
-say -v Bad News  "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BadNewsTest.aiff 
-say -v Bahh "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BahhTest.aiff 
-say -v Bells  "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BellsTest.aiff 
-say -v Boing "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BoingTest.aiff 
-say -v Bruce "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BruceTest.aiff 
-say -v Bubbles "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o BubblesTest.aiff 
-say -v Carmit "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o CarmitTest.aiff 
-say -v Catarina "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o CatarinaTest.aiff 
-say -v Cellos "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o CellosTest.aiff 
-say -v Cem "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o CemTest.aiff
-say -v Damayanti "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o DamayantiTest.aiff 
-
-
-say -v Daniel "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o DanielTest.aiff 
-say -v Deranged "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o DerangedTest.aiff 
-say -v Diego "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o DiegoTest.aiff 
-say -v Ellen "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o EllenTest.aiff 
-say -v Ewa "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o EwaTest.aiff 
-say -v Felipe "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o FelipeTest.aiff 
-say -v Fiona "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o FionaTest.aiff 
-say -v Fred "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o FredTest.aiff 
-say -v Good News "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o GoodNewsTest.aiff 
-say -v Henrik "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o HenrikTest.aiff 
-say -v Hysterical "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o HytsericalTest.aiff 
+say -v Bad News  "what we need right now is MORE FUNKY JAMS" -o BadNewsTest.aiff 
+say -v Bahh "what we need right now is MORE FUNKY JAMS" -o BahhTest.aiff 
+say -v Bells  "what we need right now is MORE FUNKY JAMS" -o BellsTest.aiff 
+say -v Boing "what we need right now is MORE FUNKY JAMS" -o BoingTest.aiff 
+say -v Bruce "what we need right now is MORE FUNKY JAMS" -o BruceTest.aiff 
+say -v Bubbles "what we need right now is MORE FUNKY JAMS" -o BubblesTest.aiff 
+say -v Carmit "what we need right now is MORE FUNKY JAMS" -o CarmitTest.aiff 
+say -v Catarina "what we need right now is MORE FUNKY JAMS" -o CatarinaTest.aiff 
+say -v Cellos "what we need right now is MORE FUNKY JAMS" -o CellosTest.aiff 
+say -v Cem "what we need right now is MORE FUNKY JAMS" -o CemTest.aiff
+say -v Damayanti "what we need right now is MORE FUNKY JAMS" -o DamayantiTest.aiff 
 
 
 
-
-say -v Ioana "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o IoanaTest.aiff 
-say -v Joana "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o JoanaTest.aiff 
-say -v Jorge "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o JorgeTest.aiff 
-say -v Juan "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o JuanTest.aiff 
-say -v Junior "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o JuniorTest.aiff 
-say -v Kanya "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KanyaTest.aiff 
-say -v Karen "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KarenTest.aiff 
-say -v Kathy "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KathyTest.aiff 
-say -v Klara "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KlaraTest.aiff 
-say -v Kyoko "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o KyokoTest.aiff 
-say -v Laila "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LailaTest.aiff 
-
-
-
-say -v Laura "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LauraTest.aiff 
-say -v Lekha "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LekhaTest.aiff 
-say -v Luca "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LucaTest.aiff 
-say -v Luciana "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o LucianaTest.aiff 
-say -v Maged "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MagedTest.aiff 
-say -v Mariska "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MariskaTest.aiff 
-say -v 'Mei-Jia' "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MeiJiaTest.aiff 
-say -v Melina "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MelinaTest.aiff 
-say -v Milena "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MilenaTest.aiff 
-say -v Moira "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MoiraTest.aiff 
-say -v Monica "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o MonicaTest.aiff 
-
-
-
-say -v Nora "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o NoraTest.aiff 
-say -v Oskar "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o OskarTest.aiff 
-say -v Paulina "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o PaulinaTest.aiff 
-say -v 'Pipe Organ' "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o PipeOrganTest.aiff 
-say -v Princess "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o PrincessTest.aiff 
-say -v Ralph "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o RalphTest.aiff
-say -v Rishi "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o RishiTest.aiff 
-say -v Samantha "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SamanthaTest.aiff 
-say -v Sara "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SaraTest.aiff 
-say -v Satu "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SatuTest.aiff 
-say -v 'Sin-ji' "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SinjiTest.aiff 
+say -v Daniel "what we need right now is MORE FUNKY JAMS" -o DanielTest.aiff 
+say -v Deranged "what we need right now is MORE FUNKY JAMS" -o DerangedTest.aiff 
+say -v Diego "what we need right now is MORE FUNKY JAMS" -o DiegoTest.aiff 
+say -v Ellen "what we need right now is MORE FUNKY JAMS" -o EllenTest.aiff 
+say -v Ewa "what we need right now is MORE FUNKY JAMS" -o EwaTest.aiff 
+say -v Felipe "what we need right now is MORE FUNKY JAMS" -o FelipeTest.aiff 
+say -v Fiona "what we need right now is MORE FUNKY JAMS" -o FionaTest.aiff 
+say -v Fred "what we need right now is MORE FUNKY JAMS" -o FredTest.aiff 
+say -v Good News "what we need right now is MORE FUNKY JAMS" -o GoodNewsTest.aiff 
+say -v Henrik "what we need right now is MORE FUNKY JAMS" -o HenrikTest.aiff 
+say -v Hysterical "what we need right now is MORE FUNKY JAMS" -o HytsericalTest.aiff 
 
 
 
 
-say -v Susan "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o SusanTest.aiff 
-say -v Tarik "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TarikTest.aiff 
-say -v Tessa "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TessaTest.aiff 
-say -v Thomas "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o ThomasTest.aiff 
-say -v 'Ting-Ting' "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TingTingTest.aiff 
-say -v Tom "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TomTest.aiff 
-say -v Trinoids "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o TrinoidsTest.aiff 
-say -v Veena "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o VeenaTest.aiff 
-say -v Vicki "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o VickiTest.aiff 
-say -v Victoria "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o VictoriaTest.aiff 
+say -v Ioana "what we need right now is MORE FUNKY JAMS" -o IoanaTest.aiff 
+say -v Joana "what we need right now is MORE FUNKY JAMS" -o JoanaTest.aiff 
+say -v Jorge "what we need right now is MORE FUNKY JAMS" -o JorgeTest.aiff 
+say -v Juan "what we need right now is MORE FUNKY JAMS" -o JuanTest.aiff 
+say -v Junior "what we need right now is MORE FUNKY JAMS" -o JuniorTest.aiff 
+say -v Kanya "what we need right now is MORE FUNKY JAMS" -o KanyaTest.aiff 
+say -v Karen "what we need right now is MORE FUNKY JAMS" -o KarenTest.aiff 
+say -v Kathy "what we need right now is MORE FUNKY JAMS" -o KathyTest.aiff 
+say -v Klara "what we need right now is MORE FUNKY JAMS" -o KlaraTest.aiff 
+say -v Kyoko "what we need right now is MORE FUNKY JAMS" -o KyokoTest.aiff 
+say -v Laila "what we need right now is MORE FUNKY JAMS" -o LailaTest.aiff 
 
 
-say -v Whisper "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o WhisperTest.aiff 
-say -v Xander "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o XanderTest.aiff 
-say -v Yelda "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o YeldaTest.aiff 
-say -v Yuna "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o YunaTest.aiff 
-say -v Yuri "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o YuriTest.aiff 
-say -v Zarvox "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o ZarvoxTest.aiff 
-say -v Zosia "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o ZosiaTest.aiff 
-say -v Zuzana "The JUICE is LOOSE.  hypotenuse.  Talk to me GOOSE." -o ZuzanaTest.aiff 
+
+say -v Laura "what we need right now is MORE FUNKY JAMS" -o LauraTest.aiff 
+say -v Lekha "what we need right now is MORE FUNKY JAMS" -o LekhaTest.aiff 
+say -v Luca "what we need right now is MORE FUNKY JAMS" -o LucaTest.aiff 
+say -v Luciana "what we need right now is MORE FUNKY JAMS" -o LucianaTest.aiff 
+say -v Maged "what we need right now is MORE FUNKY JAMS" -o MagedTest.aiff 
+say -v Mariska "what we need right now is MORE FUNKY JAMS" -o MariskaTest.aiff 
+say -v 'Mei-Jia' "what we need right now is MORE FUNKY JAMS" -o MeiJiaTest.aiff 
+say -v Melina "what we need right now is MORE FUNKY JAMS" -o MelinaTest.aiff 
+say -v Milena "what we need right now is MORE FUNKY JAMS" -o MilenaTest.aiff 
+say -v Moira "what we need right now is MORE FUNKY JAMS" -o MoiraTest.aiff 
+say -v Monica "what we need right now is MORE FUNKY JAMS" -o MonicaTest.aiff 
+
+
+
+say -v Nora "what we need right now is MORE FUNKY JAMS" -o NoraTest.aiff 
+say -v Oskar "what we need right now is MORE FUNKY JAMS" -o OskarTest.aiff 
+say -v Paulina "what we need right now is MORE FUNKY JAMS" -o PaulinaTest.aiff 
+say -v 'Pipe Organ' "what we need right now is MORE FUNKY JAMS" -o PipeOrganTest.aiff 
+say -v Princess "what we need right now is MORE FUNKY JAMS" -o PrincessTest.aiff 
+say -v Ralph "what we need right now is MORE FUNKY JAMS" -o RalphTest.aiff
+say -v Rishi "what we need right now is MORE FUNKY JAMS" -o RishiTest.aiff 
+say -v Samantha "what we need right now is MORE FUNKY JAMS" -o SamanthaTest.aiff 
+say -v Sara "what we need right now is MORE FUNKY JAMS" -o SaraTest.aiff 
+say -v Satu "what we need right now is MORE FUNKY JAMS" -o SatuTest.aiff 
+say -v 'Sin-ji' "what we need right now is MORE FUNKY JAMS" -o SinjiTest.aiff 
+
+
+
+
+say -v Susan "what we need right now is MORE FUNKY JAMS" -o SusanTest.aiff 
+say -v Tarik "what we need right now is MORE FUNKY JAMS" -o TarikTest.aiff 
+say -v Tessa "what we need right now is MORE FUNKY JAMS" -o TessaTest.aiff 
+say -v Thomas "what we need right now is MORE FUNKY JAMS" -o ThomasTest.aiff 
+say -v 'Ting-Ting' "what we need right now is MORE FUNKY JAMS" -o TingTingTest.aiff 
+say -v Tom "what we need right now is MORE FUNKY JAMS" -o TomTest.aiff 
+say -v Trinoids "what we need right now is MORE FUNKY JAMS" -o TrinoidsTest.aiff 
+say -v Veena "what we need right now is MORE FUNKY JAMS" -o VeenaTest.aiff 
+say -v Vicki "what we need right now is MORE FUNKY JAMS" -o VickiTest.aiff 
+say -v Victoria "what we need right now is MORE FUNKY JAMS" -o VictoriaTest.aiff 
+
+
+say -v Whisper "what we need right now is MORE FUNKY JAMS" -o WhisperTest.aiff 
+say -v Xander "what we need right now is MORE FUNKY JAMS" -o XanderTest.aiff 
+say -v Yelda "what we need right now is MORE FUNKY JAMS" -o YeldaTest.aiff 
+say -v Yuna "what we need right now is MORE FUNKY JAMS" -o YunaTest.aiff 
+say -v Yuri "what we need right now is MORE FUNKY JAMS" -o YuriTest.aiff 
+say -v Zarvox "what we need right now is MORE FUNKY JAMS" -o ZarvoxTest.aiff 
+say -v Zosia "what we need right now is MORE FUNKY JAMS" -o ZosiaTest.aiff 
+say -v Zuzana "what we need right now is MORE FUNKY JAMS" -o ZuzanaTest.aiff 
 
