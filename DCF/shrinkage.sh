@@ -33,5 +33,5 @@ echo "\n -----------------------------------------------------------------------
 #	betas
 	# for f in `ls -1tr $SRC*.s`; do ffmpeg -i $SRC$f -crf 24  -vf v360=eac:equirect:in_stereo=sbs:in_trans=1:ih_flip=1:out_stereo=tb $SRC$f; done
 for f in $SRC*.*4; 
-	do ffmpeg -i $f -crf 24  -vf v360=eac:equirect:in_stereo=sbs:in_trans=1:ih_flip=1:out_stereo=tb $f$(date +%s)".MP4";
+	do ffmpeg -i $f -crf 24  -vf v360=eac:flat:yaw=45$f$(date +%s)".MP4";
 done
