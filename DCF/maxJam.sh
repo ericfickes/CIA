@@ -48,6 +48,16 @@ echo "\n -----------------------------------------------------------------------
 echo $SRC_FLDR+"MaxHeadroom.mp4 down to $OUT_FILE down"
 echo "\n -------------------------------------------------------------------------------";
 
+
+
+# TODO: look into what each of these filters do to 360 footy
+# Convert equirectangular video to cubemap with 3x2 layout and 1% padding using bicubic interpolation:
+	# ffmpeg -i input.mkv -vf v360=e:c3x2:cubic:out_pad=0.01 output.mkv
+# Extract back view of Equi-Angular Cubemap:
+	# ffmpeg -i input.mkv -vf v360=eac:flat:yaw=180 output.mkv
+# Convert transposed and horizontally flipped Equi-Angular Cubemap in side-by-side stereo format to equirectangular top-bottom stereo format:
+	# v360=eac:equirect:in_stereo=sbs:in_trans=1:ih_flip=1:out_stereo=tb
+
 	# ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 45 -vcodec h264 -acodec mp3 -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
 	ffmpeg -i $SRC_FLDR"MaxHeadroom.mp4" -crf 24  -vf v360=e:e:yaw=0:pitch=0:roll=0 $SRC_FLDR$OUT_FILE
 
