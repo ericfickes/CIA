@@ -1,0 +1,177 @@
+
+say -v Veena "OH SNAP. THAT SHIT WAS FUNKY." -O Veena_Snap.aiff
+say -v Tom "OH SNAP. THAT SHIT WAS FUNKY." -O Tom_Snap.aiff
+say -v Susan "OH SNAP. THAT SHIT WAS FUNKY." -O Susan_Snap.aiff
+say -v Sin-ji "OH SNAP. THAT SHIT WAS FUNKY." -O Sin-ji_Snap.aiff
+say -v Samantha "OH SNAP. THAT SHIT WAS FUNKY." -O Samantha_Snap.aiff
+say -v Rishi "OH SNAP. THAT SHIT WAS FUNKY." -O Rishi_Snap.aiff
+say -v Mei-Jia "OH SNAP. THAT SHIT WAS FUNKY." -O Mei-Jia_Snap.aiff
+say -v Luca "OH SNAP. THAT SHIT WAS FUNKY." -O Luca_Snap.aiff
+say -v Daniel "OH SNAP. THAT SHIT WAS FUNKY." -O Daniel_Snap.aiff
+say -v Ava "OH SNAP. THAT SHIT WAS FUNKY." -O Ava_Snap.aiff
+
+
+
+
+say -v Bells "ONE TWO THREE FOUR" -o Bells-count.aiff
+say -v Bells "FUNKY FUNKY" -o Bells.aiff
+say -v Maged "LETS GET FUNKY" -o MagedTest.aiff 
+say -v Ava "LETS GET FUNKY" -o AvaTest.aiff 
+say -v Bruce "LETS GET FUNKY" -o BruceTest.aiff 
+say -v Cellos "LETS GET FUNKY" -o CellosTest.aiff 
+say -v Daniel "LETS GET FUNKY" -o DanielTest.aiff 
+say -v Tom "LETS GET FUNKY" -o TomTest.aiff 
+
+#	FAVES
+
+say -v Maged "FUNKY. FUNKY. TWENTY. TWENTY"
+
+say -v Ava "LET'S,  GET, FUNKY.  UMMMMMMMM. YEAH. FUNKY"
+
+	# OG FUNKY FUNKY voice
+	say -v Bells "FUNKY FUNKY"
+
+#	FUNKY FUNK 2020
+say -v BELLS "LET'S  GET FUNKY.  FUNKY FUNKY"
+
+
+
+say -v Bruce "FUNKY FUNKY 20 20"
+
+say -v Cellos "FUNKY FUNKY 20 20"
+
+say -v Daniel "FUNKY FUNKY 20 20"
+
+
+
+
+say -v Tessa "FUNKY FUNKY 20 20"
+
+say -v Tom "FUNKY FUNKY 20 20"
+
+say -v Trinoids "FUNKY FUNKY 20 20"
+
+say -v Zarvox "FUNKY, FUNKY, 20, 20"
+
+
+
+#	FAVES
+
+
+
+#NOTES
+
+# get installed list
+say -v '?'
+
+
+say -v Alice "INFORMATION.  What's the 4 1 1?" -o AliceTest.aiff 
+
+don't use mp3
+
+Running say --file-format=? will give you a good list of what your machine supports
+
+
+say --file-format=?
+3gp2  3GPP-2 Audio         (.3g2) [Qclp,aac,aace,aacf,aacg,aach,aacl,aacp]
+3gpp  3GP Audio            (.3gp) [Qclp,aac,aace,aacf,aacg,aach,aacl,aacp]
+AIFC  AIFC                 (.aifc,.aiff,.aif) [lpcm,ulaw,alaw,ima4,Qclp]
+AIFF  AIFF                 (.aiff,.aif) [lpcm]
+NeXT  NeXT/Sun             (.snd,.au) [lpcm,ulaw,alaw]
+RF64  WAVE (RF64 for length over 4 GB) (.wav) [lpcm,ulaw,alaw]
+Sd2f  Sound Designer II    (.sd2) [lpcm]
+WAVE  WAVE                 (.wav) [lpcm,ulaw,alaw]
+adts  AAC ADTS             (.aac,.adts) [aac,aach,aacp]
+caff  CAF                  (.caf) [Qclp,aac,aace,aacf,aacg,aach,aacl,aacp,alac,alaw,flac,ilbc,ima4,lpcm,opus,ulaw]
+flac  FLAC                 (.flac) [flac]
+loas  LATM/LOAS            (.loas,.latm,.xhe) [aac,aace,aacf,aacg,aach,aacl,aacp]
+m4af  Apple MPEG-4 Audio   (.m4a,.m4r) [aac,aace,aacf,aacg,aach,aacl,aacp,alac]
+m4bf  Apple MPEG-4 AudioBooks (.m4b) [aac,aace,aacf,aacg,aach,aacl,aacp]
+mp4f  MPEG-4 Audio         (.mp4) [aac,aace,aacf,aacg,aach,aacl,aacp,alac]	
+
+
+
+#	CURRENTLY INSTALLED VOICES
+
+	say -v Agnes "FUNKY FUNKY 20 20"
+	say -v Albert "FUNKY FUNKY 20 20"
+	say -v Alex "FUNKY FUNKY 20 20"
+	say -v Alice "FUNKY FUNKY 20 20"
+	say -v Allison "FUNKY FUNKY 20 20"
+	say -v Alva "FUNKY FUNKY 20 20"
+	say -v Amelie "FUNKY FUNKY 20 20"
+	say -v Angelica "FUNKY FUNKY 20 20"
+	say -v Anna "FUNKY FUNKY 20 20"
+say -v Ava "FUNKY FUNKY 20 20"
+	say -v Bad News "FUNKY FUNKY 20 20"
+	say -v Bahh "FUNKY FUNKY 20 20"
+
+# OG FUNKY FUNKY voice
+say -v Bells "FUNKY FUNKY 20 20"
+
+	say -v Boing "FUNKY FUNKY 20 20"
+say -v Bruce "FUNKY FUNKY 20 20"
+	say -v Bubbles "FUNKY FUNKY 20 20"
+	say -v Carmit "FUNKY FUNKY 20 20"
+	say -v Catarina "FUNKY FUNKY 20 20"
+say -v Cellos "FUNKY FUNKY 20 20"
+	say -v Cem "FUNKY FUNKY 20 20"
+	say -v Damayanti "FUNKY FUNKY 20 20"
+say -v Daniel "FUNKY FUNKY 20 20"
+	say -v Deranged "FUNKY FUNKY 20 20"
+	say -v Fiona "FUNKY FUNKY 20 20"
+	say -v Fred "FUNKY FUNKY 20 20"
+	say -v Good News "FUNKY FUNKY 20 20"
+	say -v Henrik "FUNKY FUNKY 20 20"
+	say -v Hysterical "FUNKY FUNKY 20 20"
+	say -v Ioana "FUNKY FUNKY 20 20"
+	say -v Joana "FUNKY FUNKY 20 20"
+	say -v Jorge "FUNKY FUNKY 20 20"
+	say -v Juan "FUNKY FUNKY 20 20"
+	say -v Junior "FUNKY FUNKY 20 20"
+	say -v Kanya "FUNKY FUNKY 20 20"
+	say -v Karen "FUNKY FUNKY 20 20"
+	say -v Kathy "FUNKY FUNKY 20 20"
+	say -v Klara "FUNKY FUNKY 20 20"
+	say -v Kyoko "FUNKY FUNKY 20 20"
+	say -v Laila "FUNKY FUNKY 20 20"
+	say -v Laura "FUNKY FUNKY 20 20"
+	say -v Lekha "FUNKY FUNKY 20 20"
+	say -v Luca "FUNKY FUNKY 20 20"
+	say -v Luciana "FUNKY FUNKY 20 20"
+say -v Maged "FUNKY FUNKY"
+	say -v Mariska "FUNKY FUNKY 20 20"
+	say -v Mei-Jia "FUNKY FUNKY 20 20"
+	say -v Melina "FUNKY FUNKY 20 20"
+	say -v Milena "FUNKY FUNKY 20 20"
+	say -v Moira "FUNKY FUNKY 20 20"
+	say -v Monica "FUNKY FUNKY 20 20"
+	say -v Nora "FUNKY FUNKY 20 20"
+	say -v Oskar "FUNKY FUNKY 20 20"
+	say -v Paulina "FUNKY FUNKY 20 20"
+	say -v Pipe Organ "FUNKY FUNKY 20 20"
+	say -v Princess "FUNKY FUNKY 20 20"
+	say -v Ralph "FUNKY FUNKY 20 20"
+	say -v Rishi "FUNKY FUNKY 20 20"
+	say -v Samantha "FUNKY FUNKY 20 20"
+	say -v Sara "FUNKY FUNKY 20 20"
+	say -v Satu "FUNKY FUNKY 20 20"
+	say -v Sin-ji "FUNKY FUNKY 20 20"
+	say -v Susan "FUNKY FUNKY 20 20"
+	say -v Tarik "FUNKY FUNKY 20 20"
+say -v Tessa "FUNKY FUNKY 20 20"
+	say -v Thomas "FUNKY FUNKY 20 20"
+	say -v Ting-Ting "FUNKY FUNKY 20 20"
+say -v Tom "FUNKY FUNKY 20 20"
+say -v Trinoids "FUNKY FUNKY 20 20"
+	say -v Veena "FUNKY FUNKY 20 20"
+	say -v Vicki "FUNKY FUNKY 20 20"
+	say -v Victoria "FUNKY FUNKY 20 20"
+	say -v Whisper "FUNKY FUNKY 20 20"
+	say -v Xander "FUNKY FUNKY 20 20"
+	say -v Yelda "FUNKY FUNKY 20 20"
+	say -v Yuna "FUNKY FUNKY 20 20"
+	say -v Yuri "FUNKY FUNKY 20 20"
+say -v Zarvox "FUNKY, FUNKY, 20, 20"
+	say -v Zosia "FUNKY FUNKY 20 20"
+	say -v Zuzana "FUNKY FUNKY 20 20"

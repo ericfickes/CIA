@@ -21,7 +21,7 @@
 #	run script to kick out all of the appropriate SAY information for the local system
 #	- voice list
 #	- format list
-#	- ??
+#	- ??q
 */
 
 
