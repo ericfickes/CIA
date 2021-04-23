@@ -1,14 +1,31 @@
 
-say -v Veena "OH SNAP. THAT SHIT WAS FUNKY." -O Veena_Snap.aiff
-say -v Tom "OH SNAP. THAT SHIT WAS FUNKY." -O Tom_Snap.aiff
-say -v Susan "OH SNAP. THAT SHIT WAS FUNKY." -O Susan_Snap.aiff
-say -v Sin-ji "OH SNAP. THAT SHIT WAS FUNKY." -O Sin-ji_Snap.aiff
-say -v Samantha "OH SNAP. THAT SHIT WAS FUNKY." -O Samantha_Snap.aiff
-say -v Rishi "OH SNAP. THAT SHIT WAS FUNKY." -O Rishi_Snap.aiff
-say -v Mei-Jia "OH SNAP. THAT SHIT WAS FUNKY." -O Mei-Jia_Snap.aiff
-say -v Luca "OH SNAP. THAT SHIT WAS FUNKY." -O Luca_Snap.aiff
-say -v Daniel "OH SNAP. THAT SHIT WAS FUNKY." -O Daniel_Snap.aiff
-say -v Ava "OH SNAP. THAT SHIT WAS FUNKY." -O Ava_Snap.aiff
+say -v Veena "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Tom "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Susan "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Sin-ji "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Samantha "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Rishi "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Mei-Jia "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Luca "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Daniel "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+say -v Ava "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS."
+
+
+
+
+
+say -v Veena "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Veena_Snap.aiff
+say -v Tom "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Tom_Snap.aiff
+say -v Susan "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Susan_Snap.aiff
+say -v Sin-ji "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Sin-ji_Snap.aiff
+say -v Samantha "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Samantha_Snap.aiff
+say -v Rishi "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Rishi_Snap.aiff
+say -v Mei-Jia "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Mei-Jia_Snap.aiff
+say -v Luca "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Luca_Snap.aiff
+say -v Daniel "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Daniel_Snap.aiff
+say -v Ava "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Ava_Snap.aiff
+say -v Bruce "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Bruce_Snap.aiff
+say -v Tessa "HEY GIRL.  STOP PLAYING.  WE BOTH KNOW.  YOU WANT THIS." -o Tessa_Snap.aiff
 
 
 
